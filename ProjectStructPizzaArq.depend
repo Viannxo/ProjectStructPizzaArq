@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1733170929 source:c:\users\eduar\onedrive\햞ea de trabalho\codeblocks\projectstructpizzaarq\ingrediente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ingrediente.h"
+
+1733170929 c:\users\eduar\onedrive\햞ea de trabalho\codeblocks\projectstructpizzaarq\ingrediente.h
+
+1733170929 source:c:\users\eduar\onedrive\햞ea de trabalho\codeblocks\projectstructpizzaarq\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ingrediente.h"
+	"pizza.h"
+
+1733170929 c:\users\eduar\onedrive\햞ea de trabalho\codeblocks\projectstructpizzaarq\pizza.h
+	"ingrediente.h"
+
+1733170929 source:c:\users\eduar\onedrive\햞ea de trabalho\codeblocks\projectstructpizzaarq\pizza.c
+	<stdio.h>
+	<string.h>
+	"pizza.h"
+

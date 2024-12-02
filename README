@@ -1,0 +1,77 @@
+Objetivo: Desenvolver um sistema de gerenciamento de pizzaria em C, com funcionalidades de
+inclusão, alteração, remoção e consulta (CRUD) de pizzas e ingredientes. O sistema permitirá ao
+usuário gerenciar um cardápio de pizzas e realizar vendas personalizadas. Além disso, o sistema
+deve exportar e importar dados para arquivos, permitindo salvar e carregar o cardápio e histórico de
+vendas.
+Especificações Técnicas:
+1. Estruturas Necessárias:
+o Struct Pizzas:
+▪ Id (inteiro) – chave de pizza.
+▪ Nome (string) — Nome da pizza.
+▪ Tamanho (char) — Tamanho da pizza (P, M, G).
+▪ Preço (float) — Valor base da pizza.
+▪ Ingredientes (Struct Ingredientes) — Array com os ingredientes padrão da
+pizza.
+o Struct Ingredientes:
+▪ Id (Inteiro) – chave ingrediente
+▪ Nome (string) — Nome do ingrediente.
+▪ Preço (float) — Custo do ingrediente.
+2. Funcionalidades Requeridas:
+o CRUD de Pizzas:
+▪ Permitir ao usuário adicionar, visualizar, editar e remover pizzas do cardápio.
+o CRUD de Ingredientes:
+▪ Permitir ao usuário adicionar, visualizar, editar e remover ingredientes
+disponíveis na pizzaria.
+o Vender Pizza:
+▪ Permitir ao usuário registrar uma venda de pizza, com a possibilidade de:
+▪ Selecionar uma pizza do cardápio.
+▪ Adicionar ingredientes adicionais, além dos padrão da pizza
+selecionada.
+▪ O preço final da pizza deve incluir o valor base mais o custo de
+qualquer ingrediente extra.
+o Exportar e Importar Dados:
+▪ Implementar funcionalidade para salvar (exportar) o cardápio de pizzas e a
+lista de ingredientes para um arquivo.
+▪ Permitir a leitura (importação) desses dados a partir do arquivo, para
+carregar o cardápio e ingredientes ao reiniciar o sistema.
+3. Estruturação do Código:
+o Crie arquivos header (.h) para organizar as funções CRUD de pizzas e de
+ingredientes. Cada header deve conter as definições das estruturas e das funções
+relacionadas:
+▪ pizza.h: Definição do struct Pizza e declarações das funções CRUD para
+pizzas.
+▪ ingrediente.h: Definição do struct Ingrediente e declarações das funções
+CRUD para ingredientes.
+o O código fonte para as implementações das funções deve ser dividido em arquivos
+.c correspondentes:
+▪ pizza.c — Implementa as funções CRUD para Pizza.
+▪ ingrediente.c — Implementa as funções CRUD para Ingrediente.
+o Um arquivo principal main.c deverá gerenciar o fluxo do programa e chamar as
+funções necessárias de cada módulo.
+4. Compilação com Makefile:
+o Crie um Makefile para facilitar a compilação do programa. O Makefile deve conter
+instruções para:
+▪ Compilar cada arquivo .c em um arquivo objeto (.o).
+▪ Lincar os objetos para criar o executável final (pizzaria.exe).
+▪ Adicionar as regras all, clean e run para facilitar a execução:
+▪ all: Compila o programa.
+▪ clean: Remove arquivos objetos e o executável.
+▪ run: Executa o programa.
+5. Considerações para Implementação:
+o Cada ação do CRUD deve ser feita por meio de menus interativos.
+o Valide os dados de entrada para evitar erros.
+o Cada pizza deve poder ter seu próprio conjunto de ingredientes padrão.
+o Ingredientes adicionais podem ser escolhidos durante o processo de venda, e o
+preço final deverá ser atualizado conforme o valor dos ingredientes adicionados.
+6. Critérios de Avaliação:
+o Correção e funcionalidade completa de todas as operações CRUD.
+o Implementação correta do cálculo de preços ao adicionar ingredientes extras.
+o Uso eficiente das operações de exportação e importação para gerenciamento de
+dados.
+o Organização do código e boas práticas de programação, incluindo o uso de funções
+para modularização das tarefas.
+Dicas:
+• Utilize arquivos binários ou de texto para realizar a exportação e importação dos dados.
+• Mantenha o código organizado e com comentários explicativos.
+• Teste cada funcionalidade do sistema para garantir que todos os requisitos sejam
+atendidos.
