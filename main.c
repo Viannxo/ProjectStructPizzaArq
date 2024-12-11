@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "ingrediente.h"
 #include "pizza.h"
+#include "pizza.c"
+#include "ingrediente.c"
 
 int main() {
     Ingrediente ingredientes[100];
